@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'pages#index'
   get 'clients/:id' => 'clients#show'
+  get 'electrics/:id' => 'electrics#show'
   devise_for :electrics
   devise_for :clients
   # The priority is based upon order of creation: first created -> highest priority.
